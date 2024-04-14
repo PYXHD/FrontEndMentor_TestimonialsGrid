@@ -19,7 +19,7 @@ main {
     .card {
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 20px;
       padding: 23px 33px 35px;
       background-color: blue;
       border-radius: 10px;
@@ -41,9 +41,10 @@ main {
 
         .identity {
           .name {
-            font-size: 1.15rem;
+            font-size: 1rem;
           }
           .graduate {
+            font-size: 0.8rem;
             opacity: 0.5;
           }
         }
@@ -54,8 +55,8 @@ main {
         font-size: 1.55rem;
       }
       .testimony {
-        opacity: 0.3;
-        line-height: 20px;
+        opacity: 0.7;
+        line-height: 17px;
       }
     }
 
@@ -74,7 +75,7 @@ main {
     .jeanette {
       grid-area: jeanette;
       background-color: $white;
-      color: $darkBlackishBlue;
+      color: $darkGrayishBlue;
     }
     .patrick {
       grid-area: patrick;
@@ -83,7 +84,7 @@ main {
     .kira {
       grid-area: kira;
       background-color: $white;
-      color: $darkBlackishBlue;
+      color: $darkGrayishBlue;
     }
   }
 }

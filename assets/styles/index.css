@@ -64,7 +64,7 @@ main .cards-container .card {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   padding: 23px 33px 35px;
   background-color: blue;
   border-radius: 10px;
@@ -87,9 +87,10 @@ main .cards-container .card .profile .img {
   border-radius: 50%;
 }
 main .cards-container .card .profile .identity .name {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 main .cards-container .card .profile .identity .graduate {
+  font-size: 0.8rem;
   opacity: 0.5;
 }
 main .cards-container .card .catchphrase {
@@ -97,8 +98,8 @@ main .cards-container .card .catchphrase {
   font-size: 1.55rem;
 }
 main .cards-container .card .testimony {
-  opacity: 0.3;
-  line-height: 20px;
+  opacity: 0.7;
+  line-height: 17px;
 }
 main .cards-container .daniel {
   grid-area: daniel;
@@ -114,7 +115,7 @@ main .cards-container .jonathan {
 main .cards-container .jeanette {
   grid-area: jeanette;
   background-color: white;
-  color: rgb(25, 33, 46);
+  color: rgb(72, 85, 106);
 }
 main .cards-container .patrick {
   grid-area: patrick;
@@ -123,5 +124,5 @@ main .cards-container .patrick {
 main .cards-container .kira {
   grid-area: kira;
   background-color: white;
-  color: rgb(25, 33, 46);
+  color: rgb(72, 85, 106);
 }/*# sourceMappingURL=index.css.map */
