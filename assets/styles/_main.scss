@@ -20,7 +20,7 @@ main {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      padding: 23px 33px 35px;
+      padding: 23px 33px;
       background-color: blue;
       border-radius: 10px;
       font-family: $fontMedium;
@@ -85,10 +85,6 @@ main {
       grid-area: kira;
       background-color: $white;
       color: $darkGrayishBlue;
-
-      .testimony {
-        line-height: 19px;
-      }
     }
   }
 }

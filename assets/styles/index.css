@@ -65,7 +65,7 @@ main .cards-container .card {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  padding: 23px 33px 35px;
+  padding: 23px 33px;
   background-color: blue;
   border-radius: 10px;
   font-family: barlowMedium, sans-serif;
@@ -125,7 +125,4 @@ main .cards-container .kira {
   grid-area: kira;
   background-color: white;
   color: rgb(72, 85, 106);
-}
-main .cards-container .kira .testimony {
-  line-height: 19px;
 }/*# sourceMappingURL=index.css.map */
