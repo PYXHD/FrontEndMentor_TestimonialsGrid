@@ -99,7 +99,7 @@ main .cards-container .card .catchphrase {
 }
 main .cards-container .card .testimony {
   opacity: 0.7;
-  line-height: 17px;
+  line-height: 18px;
 }
 main .cards-container .daniel {
   grid-area: daniel;
@@ -125,4 +125,7 @@ main .cards-container .kira {
   grid-area: kira;
   background-color: white;
   color: rgb(72, 85, 106);
+}
+main .cards-container .kira .testimony {
+  line-height: 19px;
 }/*# sourceMappingURL=index.css.map */
