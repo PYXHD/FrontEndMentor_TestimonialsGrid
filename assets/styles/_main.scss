@@ -1,0 +1,89 @@
+main {
+  .cards-container {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 24px;
+    column-gap: 30px;
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+
+    @media screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* general settings */
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 23px 33px 35px;
+      background-color: blue;
+      border-radius: 10px;
+      font-family: $fontMedium;
+      font-size: 1rem;
+      color: $white;
+      box-shadow: 10px 10px 25px $lightGray;
+
+      .profile {
+        display: flex;
+        gap: 15px;
+
+        .img {
+          width: 32px;
+          height: 32px;
+          border: 1px solid $white;
+          border-radius: 50%;
+        }
+
+        .identity {
+          .name {
+            font-size: 1.15rem;
+          }
+          .graduate {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .catchphrase {
+        font-family: $fontSemibold;
+        font-size: 1.55rem;
+      }
+      .testimony {
+        opacity: 0.3;
+        line-height: 20px;
+      }
+    }
+
+    /* individuals settings */
+    .daniel {
+      grid-area: daniel;
+      background-color: $moderateViolet;
+      background-image: url(../img/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: top right 80px;
+    }
+    .jonathan {
+      grid-area: jonathan;
+      background-color: $darkGrayishBlue;
+    }
+    .jeanette {
+      grid-area: jeanette;
+      background-color: $white;
+      color: $darkBlackishBlue;
+    }
+    .patrick {
+      grid-area: patrick;
+      background-color: $darkBlackishBlue;
+    }
+    .kira {
+      grid-area: kira;
+      background-color: $white;
+      color: $darkBlackishBlue;
+    }
+  }
+}

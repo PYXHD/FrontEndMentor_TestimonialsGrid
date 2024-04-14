@@ -1,0 +1,127 @@
+@font-face {
+  font-family: barlowMedium;
+  src: url(../fonts/BarlowSemiCondensed-Medium.ttf);
+}
+@font-face {
+  font-family: barlowSemibold;
+  src: url(../fonts/BarlowSemiCondensed-SemiBold.ttf);
+}
+html {
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 24px;
+  background-color: rgb(236, 242, 248);
+}
+
+main .cards-container {
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 24px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  /* general settings */
+  /* individuals settings */
+}
+@media screen and (max-width: 900px) {
+  main .cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+}
+main .cards-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  padding: 23px 33px 35px;
+  background-color: blue;
+  border-radius: 10px;
+  font-family: barlowMedium, sans-serif;
+  font-size: 1rem;
+  color: white;
+  -webkit-box-shadow: 10px 10px 25px rgb(207, 207, 207);
+          box-shadow: 10px 10px 25px rgb(207, 207, 207);
+}
+main .cards-container .card .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+main .cards-container .card .profile .img {
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+main .cards-container .card .profile .identity .name {
+  font-size: 1.15rem;
+}
+main .cards-container .card .profile .identity .graduate {
+  opacity: 0.5;
+}
+main .cards-container .card .catchphrase {
+  font-family: barlowSemibold, sans-serif;
+  font-size: 1.55rem;
+}
+main .cards-container .card .testimony {
+  opacity: 0.3;
+  line-height: 20px;
+}
+main .cards-container .daniel {
+  grid-area: daniel;
+  background-color: rgb(117, 65, 200);
+  background-image: url(../img/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 80px;
+}
+main .cards-container .jonathan {
+  grid-area: jonathan;
+  background-color: rgb(72, 85, 106);
+}
+main .cards-container .jeanette {
+  grid-area: jeanette;
+  background-color: white;
+  color: rgb(25, 33, 46);
+}
+main .cards-container .patrick {
+  grid-area: patrick;
+  background-color: rgb(25, 33, 46);
+}
+main .cards-container .kira {
+  grid-area: kira;
+  background-color: white;
+  color: rgb(25, 33, 46);
+}/*# sourceMappingURL=index.css.map */

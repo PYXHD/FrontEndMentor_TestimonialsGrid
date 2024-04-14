@@ -1,0 +1,40 @@
+@font-face {
+  font-family: barlowMedium;
+  src: url(../fonts/BarlowSemiCondensed-Medium.ttf);
+}
+@font-face {
+  font-family: barlowSemibold;
+  src: url(../fonts/BarlowSemiCondensed-SemiBold.ttf);
+}
+
+$fontMedium: barlowMedium, sans-serif;
+$fontSemibold: barlowSemibold, sans-serif;
+
+$white: white;
+$moderateViolet: rgb(117, 65, 200);
+$darkGrayishBlue: rgb(72, 85, 106);
+$darkBlackishBlue: rgb(25, 33, 46);
+$lightGray: rgb(207, 207, 207);
+$lightGrayishBlue: rgb(236, 242, 248);
+
+@mixin font($f-font, $f-size, $f-color) {
+  font-family: $f-font;
+  font-size: $f-size;
+  color: $f-color;
+}
+html {
+  font-size: 13px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 24px;
+  background-color: $lightGrayishBlue;
+}
